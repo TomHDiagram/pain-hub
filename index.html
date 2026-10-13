@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pain Hub – trusted advice about pain and arthritis in New Zealand</title>
+<meta name="description" content="Relevant, quality, trusted advice about pain and arthritis in New Zealand, provided by Arthritis New Zealand. Tips you can read, and a prompt to use with AI tools.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Pain Hub \u2013 trusted advice about pain and arthritis in New Zealand", "description": "Relevant, quality, trusted advice about pain and arthritis in New Zealand, provided by Arthritis New Zealand.", "inLanguage": "en-NZ", "publisher": {"@type": "Organization", "name": "Arthritis New Zealand", "url": "https://www.arthritis.org.nz"}}</script>
+<style>
+  :root{
+    --ink:#1B1A17; --ink-soft:#42351F; --cream:#FFFDF6; --cream-2:#FBF3E2; --line:#E6D8BC;
+    --orange:#F79233; --orange-2:#FBAE52; --focus:#1B1A17;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink);
+       background:linear-gradient(160deg,var(--orange) 0%,var(--orange-2) 100%) fixed;background-color:var(--orange);
+       -webkit-font-smoothing:antialiased;line-height:1.55}
+  a{color:var(--ink);text-underline-offset:3px}
+  a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+  .testbanner{background:var(--ink);color:var(--cream);text-align:center;font-size:15px;padding:10px 16px}
+  main{max-width:1000px;margin:0 auto;padding:0 16px 72px}
+  .hero{text-align:center;padding:56px 0 32px}
+  .pill{display:inline-block;background:var(--ink);color:var(--cream);font-weight:800;font-size:14px;letter-spacing:.14em;text-transform:uppercase;border-radius:999px;padding:9px 20px}
+  h1{font-size:clamp(40px,8vw,60px);line-height:1.02;letter-spacing:-.025em;font-weight:800;margin:22px auto 16px}
+  .sub{font-size:clamp(17px,2.5vw,20px);font-weight:500;max-width:46ch;margin:0 auto;color:var(--ink-soft)}
+  .card{background:var(--cream);border-radius:32px;padding:clamp(22px,4vw,48px);margin-bottom:20px;box-shadow:0 24px 60px rgba(90,45,0,.14)}
+  .card h2{font-size:clamp(24px,4vw,32px);line-height:1.15;letter-spacing:-.015em;font-weight:800;margin-bottom:14px}
+  .card p{max-width:68ch;margin-bottom:14px;font-size:17px}
+  .card p.lead{font-size:18px}
+  ol.toc{margin:6px 0 4px 1.3em;font-size:17px} ol.toc li{margin-bottom:4px}
+  .num{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--cream);font-size:17px;margin-right:10px;vertical-align:middle}
+
+  /* tips */
+  details.tip{background:#fff;border:2px solid var(--ink);border-radius:20px;margin:0 0 14px;overflow:hidden}
+  details.tip[open]{background:var(--cream-2)}
+  details.tip summary{list-style:none;cursor:pointer;padding:18px 22px 16px;display:grid;gap:6px}
+  details.tip summary::-webkit-details-marker{display:none}
+  .tip-title{font-weight:800;font-size:20px;line-height:1.25}
+  .tip-teaser{font-size:16px;color:var(--ink-soft)}
+  .more{font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px;margin-top:2px}
+  .more::after{content:"";width:9px;height:9px;border-right:2.5px solid var(--ink);border-bottom:2.5px solid var(--ink);transform:rotate(45deg) translateY(-2px);transition:transform .15s}
+  details[open]>summary .more::after{transform:rotate(-135deg) translateY(-2px)}
+  .tip-body{padding:2px 22px 20px;border-top:1px dashed var(--line);margin:0 22px;padding:16px 0 20px}
+  .tip-body h4{font-size:17px;font-weight:700;margin-bottom:8px}
+  .tip-body ul{margin:0 0 12px 1.2em} .tip-body li{margin-bottom:6px;font-size:17px;max-width:66ch}
+  .tip-body .context{margin:14px 0 6px}
+  .tip-body .context p{font-size:17px;max-width:66ch;margin-bottom:12px}
+  .src{font-size:16px;font-weight:600}
+
+  /* prompt */
+  .promptbox{background:#fff;border:2px solid var(--ink);border-radius:20px;overflow:hidden;margin:18px 0 8px}
+  .promptbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 14px;background:var(--cream-2);border-bottom:2px solid var(--ink);font-weight:700;font-size:15px}
+  button.copy{font:inherit;font-weight:800;background:var(--ink);color:var(--cream);border:0;border-radius:999px;padding:10px 22px;cursor:pointer;min-height:44px}
+  button.copy:hover{background:#000}
+  pre.prompt{white-space:pre-wrap;word-wrap:break-word;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:15px;line-height:1.55;padding:18px;max-height:none}
+  .privacy-note{font-size:15px;font-weight:600;margin:10px 0 4px}
+  details.plain{border-top:2px solid var(--line);margin-top:18px;padding-top:6px}
+  details.plain summary{cursor:pointer;font-weight:800;font-size:18px;padding:10px 0;list-style:none}
+  details.plain summary::-webkit-details-marker{display:none}
+  details.plain summary::after{content:"▾";margin-left:10px}
+  details.plain[open] summary::after{content:"▴"}
+
+  /* tables */
+  .tablewrap{margin:18px 0 28px;overflow-x:auto}
+  table.grid{border-collapse:collapse;width:100%;background:#fff;border:2px solid var(--ink);font-size:15px}
+  table.grid caption{text-align:left;font-weight:800;font-size:18px;padding:0 0 10px}
+  table.grid th,table.grid td{border:1px solid var(--line);padding:12px 14px;text-align:left;vertical-align:top}
+  table.grid thead th{background:var(--ink);color:var(--cream);font-weight:700}
+  table.grid tbody th{font-weight:700;background:var(--cream-2)}
+  .pid{display:inline-block;background:var(--ink);color:var(--cream);font-size:12px;font-weight:800;border-radius:6px;padding:1px 7px;margin-right:4px}
+  .badge{display:inline-block;background:#B3261E;color:#fff;font-size:12px;font-weight:800;border-radius:6px;padding:1px 7px;text-transform:uppercase;letter-spacing:.04em}
+  h3.sec{font-size:22px;font-weight:800;margin:26px 0 8px}
+  ul.guard{margin:6px 0 10px 1.2em;max-width:72ch} ul.guard li{margin-bottom:6px;font-size:16px}
+
+  .disclaimer{background:rgba(255,253,246,.72);border-radius:24px;padding:clamp(20px,3vw,32px)}
+  .disclaimer h2{font-size:20px;font-weight:800;margin-bottom:10px} .disclaimer p{font-size:15px;max-width:76ch;margin-bottom:10px}
+  footer{text-align:center;font-size:14px;color:var(--ink-soft);padding:18px 0 0}
+
+  @media (max-width:760px){
+    .card{border-radius:24px}
+    table.grid thead{position:absolute;left:-9999px}
+    table.grid,table.grid tbody,table.grid tr,table.grid th,table.grid td{display:block;width:100%}
+    table.grid tr{border-bottom:3px solid var(--ink)}
+    table.grid td::before,table.grid tbody th::before{content:attr(data-label);display:block;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft);margin-bottom:2px}
+  }
+  @media print{body{background:#fff} .card{box-shadow:none} button.copy{display:none}}
+</style>
+</head>
+<body>
+<div class="testbanner" role="note"><strong>Test version.</strong> This draft has not yet been reviewed by Arthritis New Zealand. Please don’t rely on it for health decisions.</div>
+<main>
+
+<header class="hero">
+  <span class="pill">Arthritis New Zealand</span>
+  <h1>Pain Hub</h1>
+  <p class="sub">Relevant, quality, trusted advice about pain and arthritis in New Zealand, provided by Arthritis New Zealand.</p>
+</header>
+
+<section class="card" aria-labelledby="how">
+  <h2 id="how">How to use Pain Hub</h2>
+  <p class="lead">Pain Hub is for people living with arthritis pain in New Zealand. It gives you practical, trusted tips from Arthritis New Zealand that you can read and use straight away.</p>
+  <p>You can simply read the tips. If you would like tips that fit your own situation, you can also use an AI tool such as ChatGPT, Gemini or Claude to talk through what your pain is getting in the way of. The prompt on this page asks the AI tool to use only the trusted advice on this page.</p>
+  <p>Pain Hub is also built so that AI tools can read and understand it, which is why part of this page is written for them.</p>
+  <p>The page has three sections:</p>
+  <ol class="toc">
+    <li><a href="#tips">Top tips for managing pain and arthritis</a> – for you to read any time</li>
+    <li><a href="#ai">How to use AI to make these tips relevant to your situation</a> – if you want it</li>
+    <li><a href="#content">The ‘database’ of content that makes Pain Hub work</a> – mainly for AI tools</li>
+  </ol>
+</section>
+
+<section class="card" aria-labelledby="tips">
+  <h2 id="tips"><span class="num">1</span>Top tips for managing pain and arthritis</h2>
+  
+<details class="tip" id="understanding-pain">
+  <summary><span class="tip-title">Worried that moving will do damage? Understand what your pain is telling you</span><span class="tip-teaser">Persistent pain often reflects a sensitive nervous system rather than ongoing injury.</span><span class="more" aria-hidden="true">Read more</span></summary>
+  <div class="tip-body">
+    <h4>Understanding what pain is (and isn&#x27;t) telling you</h4>
+    <ul><li>More pain doesn&#x27;t always mean more damage — persistent pain often reflects a sensitive nervous system rather than ongoing injury</li><li>Pain, stress, poor sleep and low mood can all turn the volume up on how much pain you feel, without anything new being wrong in the joint</li><li>Understanding this can take the fear out of movement, and is often the first shift that makes everything else easier</li></ul>
+    <div class="context"><p>Pain is your body&#x27;s alarm system. It exists to protect you, which is why a sudden injury hurts. When pain carries on for a long time (doctors usually say more than three months), the nerve pathways can become more sensitive. The alarm keeps going off even when there is no new damage. That doesn&#x27;t make the pain any less real. It means your nervous system is being over-protective.</p><p>This helps explain why the amount of pain you feel doesn&#x27;t always match what a scan or X-ray shows. It also explains why poor sleep, stress, worry, low mood or feeling you have no control can make pain feel worse, and why living with pain can in turn affect your sleep and mood.</p><p>Many people find that understanding this takes some of the fear out of moving and doing everyday things. There is no one-size-fits-all approach to pain, and medication is only one part of the picture.</p></div>
+    <p class="src">More: <a href="https://www.arthritis.org.nz/pain-help/understanding-pain">Understanding pain, Arthritis NZ</a></p>
+  </div>
+</details>
+
+<details class="tip" id="keep-moving">
+  <summary><span class="tip-title">Keep moving your joints – even when it&#x27;s hard</span><span class="tip-teaser">Movement and exercise help reduce pain, improve flexibility, strengthen joints, and boost overall wellbeing.</span><span class="more" aria-hidden="true">Read more</span></summary>
+  <div class="tip-body">
+    <h4>Keeping moving, gently</h4>
+    <ul><li>Regular gentle movement reduces stiffness and helps maintain strength and function</li><li>Start small and build up gradually — a few minutes at a time is enough to begin</li><li>Movement also supports sleep, mood and energy, not just the joint itself</li></ul>
+    <div class="context"><p>Joints are made to move. When you move less, joints can get stiffer and the muscles that support them can get weaker, which can make pain and tiredness harder to live with. Regular gentle movement helps keep your joints, muscles and function in better shape, and many people find it helps their sleep, mood and energy too.</p><p>It is common to worry that moving will make things worse, or to feel too tired, too sore or unsure where to start. Those feelings make sense. Movement doesn&#x27;t have to be hard or long to be worthwhile. A few minutes at a time counts, and there is no single right type. The best activity is one you enjoy enough to keep doing.</p><p>Some muscle soreness after trying something new is normal and usually settles within a day or two. If pain lingers or gets worse, or you feel worse after each time, it&#x27;s a sign to adjust and talk with your GP or physiotherapist. Arthritis Assist can also help you find local classes and people to get started with.</p></div>
+    <p class="src">More: <a href="https://www.arthritis.org.nz/living-with-arthritis/movement-and-exercise">Movement and exercise, Arthritis NZ</a></p>
+  </div>
+</details>
+
+<details class="tip" id="pacing">
+  <summary><span class="tip-title">Sore from yesterday&#x27;s activities? Learn to pace yourself so you don&#x27;t overdo it</span><span class="tip-teaser">Pacing can help you balance activity and rest, manage your energy and keep doing the things that matter to you.</span><span class="more" aria-hidden="true">Read more</span></summary>
+  <div class="tip-body">
+    <h4>Pacing yourself</h4>
+    <ul><li>Break activities into smaller, manageable chunks</li><li>Take breaks before you need them, not after</li><li>Aim for a similar amount on good days and bad days, rather than doing too much on a good day and paying for it afterwards</li></ul>
+    <div class="context"><p>Many people with arthritis know this pattern. On a good day you get a lot done. Later that day or the next, you&#x27;re sorer, stiffer or more tired, and you spend time recovering. Once you feel better, you do a lot again. This is sometimes called the boom and bust cycle.</p><p>Pacing is a way of getting off that rollercoaster. It isn&#x27;t about avoiding activity or giving up things you enjoy. It&#x27;s about finding an amount you can keep up, rather than pushing until pain or tiredness makes you stop. Some people think of it as protecting tomorrow.</p><p>Pacing can mean splitting a job into smaller parts, taking breaks before you need them, swapping between harder and easier tasks, and spreading big jobs across the week. There is no single right amount for everyone, so expect some trial and error. A good way to start is to pick one activity that often leaves you paying for it later, change one thing about how you do it, then notice how you feel that day and the next.</p></div>
+    <p class="src">More: <a href="https://www.arthritis.org.nz/pain-help/pacing-for-arthritis-pain-and-fatigue">Pacing for arthritis pain and fatigue, Arthritis NZ</a></p>
+  </div>
+</details>
+
+<details class="tip" id="adapting">
+  <summary><span class="tip-title">Stopped doing something you love? Adapt it rather than giving it up</span><span class="tip-teaser">Change how, where or for how long you do something, and keep the parts that matter most to you.</span><span class="more" aria-hidden="true">Read more</span></summary>
+  <div class="tip-body">
+    <h4>Adapting the activity rather than giving it up</h4>
+    <ul><li>Change how, where or for how long you do something</li><li>Keep the parts of it that matter most to you</li><li>Adapting isn&#x27;t giving up — it&#x27;s how you keep doing what you value</li></ul>
+    <div class="context"><p>When pain gets in the way of something you love, it&#x27;s easy to stop doing it altogether. Over time that can wear down your confidence and make daily life feel smaller. Adapting is a middle path. You keep what the activity means to you, and change how it fits around your pain.</p><p>That might mean doing it at a different time of day or in a different place, doing it for less time, or doing part of it rather than all of it. What matters is the reason you do it, whether that&#x27;s time with a person, a place, or a routine that helps you feel like yourself.</p><p>Arthritis NZ describes acceptance as the first step in managing pain. That isn&#x27;t giving up. It means recognising that you can take an active part in managing your pain. Because everyone responds differently, it can take a few tries to find what works for you. Pain may limit some things, but it doesn&#x27;t have to control your life.</p></div>
+    <p class="src">More: <a href="https://www.arthritis.org.nz/pain-help/treating-pain">Treating pain, Arthritis NZ</a></p>
+  </div>
+</details>
+
+<details class="tip" id="protect-your-joints">
+  <summary><span class="tip-title">Strain from the same task again and again? Protect your joints</span><span class="tip-teaser">Think about your position during a task, and avoid staying in one position for too long.</span><span class="more" aria-hidden="true">Read more</span></summary>
+  <div class="tip-body">
+    <h4>Protecting your joints</h4>
+    <ul><li>Think about your posture and positioning during a task</li><li>Avoid staying in one position for too long</li><li>Use your larger, stronger joints for heavy work and reduce unnecessary strain</li></ul>
+    <div class="context"><p>Your joints cope with a lot through the day, and some tasks put the same joints under strain again and again. Protecting your joints starts with noticing which tasks do that, and then finding ways to share the load around.</p><p>That can mean changing position more often so you&#x27;re not held in one place for too long, breaking a task into parts so no single position is held for long, or asking someone else to do the heaviest part. It&#x27;s also worth thinking about which jobs really need to be done in one go.</p><p>How to protect your joints depends on which joints are affected and what you do each day, so it&#x27;s worth getting advice that fits you. An occupational therapist or physiotherapist can show you what suits you for a particular task, including how to position your body and hands. Your GP can refer you, and Arthritis Assist can point you in the right direction. The Arthritis NZ page below has more everyday ideas for looking after your joints.</p></div>
+    <p class="src">More: <a href="https://www.arthritis.org.nz/news/tips-to-improve-and-protect-joint-health">Tips to improve and protect joint health, Arthritis NZ</a></p>
+  </div>
+</details>
+
+<details class="tip" id="tools-and-supports">
+  <summary><span class="tip-title">Everyday tasks hard to grip, reach or balance? Tools and supports can help</span><span class="tip-teaser">Supportive footwear, walking sticks, raised chairs and larger-handled utensils can all reduce strain.</span><span class="more" aria-hidden="true">Read more</span></summary>
+  <div class="tip-body">
+    <h4>Using tools and supports to make things easier</h4>
+    <ul><li>Supportive footwear, walking sticks, raised chairs and larger-handled utensils can all reduce strain</li><li>The right aid can be the difference between managing something and giving it up</li><li>An occupational therapist can help work out what would suit your situation</li></ul>
+    <div class="context"><p>Arthritis can make everyday tasks harder or sore, whether that&#x27;s opening a jar, getting dressed, reaching for something, getting out of a chair or keeping your balance. Tools and aids can take some of the force off your hands, feet and other joints, and help you stay independent and keep doing what matters to you.</p><p>There are aids for many kinds of tasks, from the kitchen and bathroom to dressing and getting around. What works for one person may not suit another, which is why an occupational therapist (OT) can be so helpful. They can look at what you want to do, work out what&#x27;s getting in the way, and suggest or adapt equipment that fits you.</p><p>You can ask your GP about a referral to a hospital occupational therapy service for funded equipment, look for an OT yourself, or buy tools from a mobility store. The Arthritis NZ page below explains where to look, and Arthritis Assist is free to call if you&#x27;d like to talk it through.</p></div>
+    <p class="src">More: <a href="https://www.arthritis.org.nz/living-with-arthritis/products-and-equipment">Products and equipment, Arthritis NZ</a></p>
+  </div>
+</details>
+
+<details class="tip" id="plan-your-energy">
+  <summary><span class="tip-title">Too much to do and not enough energy? Plan and prioritise</span><span class="tip-teaser">Decide what really matters to you, and let the rest wait.</span><span class="more" aria-hidden="true">Read more</span></summary>
+  <div class="tip-body">
+    <h4>Planning and prioritising your energy</h4>
+    <ul><li>Decide what really matters to you, and let the rest wait</li><li>Spread jobs across the day or the week rather than doing them all at once</li><li>Break big jobs into smaller ones, and ask for help with the things that don&#x27;t need to be done by you</li></ul>
+    <div class="context"><p>When you live with pain, your energy is limited, and some days there is even less of it. Trying to do everything often leads to overdoing it, then paying for it later. Planning and prioritising means deciding ahead of time where your energy goes.</p><p>Start with what matters most to you, whether that&#x27;s a person, a role or a routine, and give that your energy first. Other jobs can wait, be shared out, or be left undone. Spreading jobs across the day or the week, and breaking big jobs into smaller steps, can make a full list feel more manageable.</p><p>Asking for help is a sensible use of your energy, not a weakness. So is saying no sometimes. Arthritis NZ describes planning, setting priorities and pacing as working together to reduce stress and help you keep going. You don&#x27;t have to get the plan right the first time. Adjust it as you learn what works for you.</p></div>
+    <p class="src">More: <a href="https://www.arthritis.org.nz/pain-help/treating-pain">Treating pain, Arthritis NZ</a></p>
+  </div>
+</details>
+
+<details class="tip" id="flare-ups">
+  <summary><span class="tip-title">Caught out by flare-ups? Have a plan ready</span><span class="tip-teaser">Ease back and rest – a flare is temporary.</span><span class="more" aria-hidden="true">Read more</span></summary>
+  <div class="tip-body">
+    <h4>Having a plan for flare-ups</h4>
+    <ul><li>Ease back and rest — a flare is temporary</li><li>Prioritise only the essentials while it lasts</li><li>Return to your normal activity gradually as things settle</li></ul>
+    <div class="context"><p>A flare-up is a temporary worsening of your symptoms. It can bring more pain, stiffness, swelling and tiredness, and it can happen even when you&#x27;re doing everything right. Flares are often linked to doing too much or to pressure from other people, and they can follow things like illness too. They are usually temporary. Arthritis NZ suggests speaking with your doctor if your symptoms last.</p><p>You can&#x27;t always prevent a flare-up, but you can be ready for one. A plan made when you&#x27;re feeling better takes a lot of pressure off when you&#x27;re not. Think about what you would let go of, who you would tell, and who could help. Being kind to yourself matters too. A flare-up isn&#x27;t your fault.</p><p>When things settle, ease back into your usual activities gradually rather than trying to catch up all at once. If you&#x27;re in a flare right now and finding it hard, Arthritis Assist is free to call on 0800 663 463.</p></div>
+    <p class="src">More: <a href="https://www.arthritis.org.nz/pain-help/managing-flare-ups">Managing a flare-up, Arthritis NZ</a></p>
+  </div>
+</details>
+
+<details class="tip" id="relaxation">
+  <summary><span class="tip-title">Pain feels worse when you&#x27;re stressed or tense? Try relaxation and focus</span><span class="tip-teaser">Deep breathing, relaxation and mindfulness help your body release tension it&#x27;s holding.</span><span class="more" aria-hidden="true">Read more</span></summary>
+  <div class="tip-body">
+    <h4>Using relaxation and attention techniques</h4>
+    <ul><li>Deep breathing, relaxation and mindfulness help your body release tension it&#x27;s holding</li><li>Deliberately focusing on something absorbing and enjoyable is a recognised pain strategy, not just a distraction</li><li>These reduce the impact pain has on you, even when the pain itself doesn&#x27;t change</li></ul>
+    <div class="context"><p>Pain isn&#x27;t only in the joints. Worry, tension and frustration can build up around it, and stress can make pain feel worse. Relaxation, mindfulness and absorbing activities are ways of changing how you relate to pain, rather than ways of making it go away.</p><p>Mindfulness means noticing your thoughts, feelings and body sensations in the present moment, with kindness and curiosity, rather than judging them. It doesn&#x27;t mean emptying your mind, and it doesn&#x27;t replace medical treatment. Many people find it helps them feel calmer and less overwhelmed by the emotional load of pain. Giving your attention to something you find absorbing and enjoyable can have a similar effect.</p><p>It takes practice, and feeling awkward at first is normal. The Arthritis NZ page below has more on mindfulness to explore. If you&#x27;re not sure whether it suits you, talk with your GP or another health provider.</p></div>
+    <p class="src">More: <a href="https://www.arthritis.org.nz/living-with-arthritis/complementary-therapies/mindfulness-mental-health">Mindfulness and mental health, Arthritis NZ</a></p>
+  </div>
+</details>
+
+<details class="tip" id="what-influences-pain">
+  <summary><span class="tip-title">Sleeping badly, stressed or feeling low? Look after what influences pain</span><span class="tip-teaser">Sleep, stress, mood and nutrition all affect how much pain you feel.</span><span class="more" aria-hidden="true">Read more</span></summary>
+  <div class="tip-body">
+    <h4>Looking after the things that influence pain</h4>
+    <ul><li>Sleep, stress, mood and nutrition all affect how much pain you feel</li><li>Pain management isn&#x27;t only about the painful joint itself</li><li>Improving one of these often makes the others easier</li></ul>
+    <div class="context"><p>Pain management isn&#x27;t only about the sore joint. Sleep, stress, mood and what you eat can all change how much pain you feel, and living with pain can in turn disturb your sleep and lower your mood. This can become a cycle that feels endless, but it can be broken at any point.</p><p>Because these things are connected, a small improvement in one area can make the others easier. Arthritis NZ&#x27;s guidance on mental health and pain treats looking after your mind as part of looking after your body. It points to things like mindfulness, gentle movement, better sleep, talking to someone you trust and keeping a gentle daily routine.</p><p>Everyone&#x27;s needs are different, and you don&#x27;t have to fix everything at once. Noticing which of these is affecting you most can be a good starting point for a conversation with your GP. Arthritis Assist is free to call if you&#x27;d like to talk it through.</p></div>
+    <p class="src">More: <a href="https://www.arthritis.org.nz/pain-help/treating-pain/mental-health-and-pain">Mental health and pain, Arthritis NZ</a></p>
+  </div>
+</details>
+
+<details class="tip" id="get-support">
+  <summary><span class="tip-title">Feeling on your own with this? Get support</span><span class="tip-teaser">Talk with your GP, pharmacist, physiotherapist or occupational therapist.</span><span class="more" aria-hidden="true">Read more</span></summary>
+  <div class="tip-body">
+    <h4>Getting support rather than managing everything alone</h4>
+    <ul><li>Talk with your GP, pharmacist, physiotherapist or occupational therapist</li><li>Prepare for that conversation — track your symptoms, write down your questions, and be specific about what&#x27;s changed</li><li>Arthritis Assist is free to call on 0800 663 463</li></ul>
+    <div class="context"><p>You don&#x27;t have to manage arthritis pain on your own. Living with pain can feel isolating, especially if you have felt unheard or aren&#x27;t sure who to ask. Arthritis NZ describes building a team of people who understand what you&#x27;re going through and want to help you live well as an important part of managing pain.</p><p>Your team might include your GP, pharmacist, physiotherapist or occupational therapist, along with friends and whānau who understand. Each can help with different things, so it&#x27;s fine to ask who is best placed to help with the question you have.</p><p>Appointments can be short, so a bit of preparation helps. Keep track of your symptoms, including what has changed and when. Write down your questions beforehand, and be specific about what you want to be able to do. Arthritis Assist is free to call on 0800 663 463 and can give advice, resources and information on every type of arthritis. Your feelings are valid, and support is available.</p></div>
+    <p class="src">More: <a href="https://www.arthritis.org.nz/is-it-arthritis/treating-joint-pain/lifestyle">Lifestyle options for treating joint pain, Arthritis NZ</a></p>
+  </div>
+</details>
+</section>
+
+<section class="card" aria-labelledby="ai">
+  <h2 id="ai"><span class="num">2</span>How to use AI to make these tips relevant to you</h2>
+  <p>The great thing about AI tools like ChatGPT is that you can talk to them and ask questions. The challenge is getting them to give you reliable information.</p>
+  <p>This is why we have created Pain Hub in a way that improves the quality of the advice provided by your AI tool.</p>
+  <p>To make the tips on this page relevant to you, paste this prompt into ChatGPT, Gemini or Claude (or any AI tool).</p>
+  <p class="privacy-note">Please don’t type your name or other identifying details into an AI tool. <a href="#privacy">Read more about privacy</a>.</p>
+  <div class="promptbox">
+    <div class="promptbar"><span id="prompt-label">Pain Hub prompt</span><button class="copy" type="button" id="copybtn" aria-describedby="prompt-label">Copy prompt</button></div>
+    <pre class="prompt" id="prompt" tabindex="0" aria-labelledby="prompt-label">You are helping someone in New Zealand who lives with pain from arthritis.
+
+Use ONLY the advice on this Arthritis New Zealand Pain Hub page: https://tomhdiagram.github.io/pain-hub/
+Open and read the whole page first, including the tables at the bottom, and follow the &quot;Guidance for the AI&quot; in them. If you cannot open the page, say so and stop. Do not answer from other sources.
+
+1. Ask me what my pain is getting in the way of. Ask one question at a time. Do not ask for my name or any identifying details.
+2. If anything I say matches a Safety or Redirect message on the page, give me that message first.
+3. Otherwise choose the one tip on the page that best fits what I told you. Show me the tip&#x27;s wording as it is written, then help me apply it to my situation, following the guidance for that tip.
+4. Give me the link for the tip.
+5. If the page does not cover what I need, say so and suggest I call Arthritis Assist on 0800 663 463.</pre>
+  </div>
+  <details class="plain">
+    <summary>How does the prompt work?</summary>
+    <p>The prompt tells the AI tool to ask you some questions, and then it tells the AI tool to only use trusted Pain Hub advice when answering.</p>
+    <p>It points the AI tool to this page, including the tables in section 3, which say which tip suits which situation and what the AI tool may and may not do.</p>
+  </details>
+</section>
+
+<section class="card" aria-labelledby="content">
+  <h2 id="content"><span class="num">3</span>The ‘database’ of content that makes Pain Hub work</h2>
+  <p>This section is written mainly for AI tools. You are welcome to read it, but you don’t need to.</p>
+  <p>Every tip above is based on specific, trusted clinical advice from Arthritis New Zealand. Every tip is connected to a web page that provides even more information.</p>
+  <p>In the tables below, “X” means what the person tells the AI their pain is getting in the way of.</p>
+  <p>The tables below help AI tools understand the tips, the web content, and provide guidance for how the AI tools may translate the tips into scenarios more relevant to people.</p>
+
+  <div class="tablewrap"><table class="grid">
+    <caption>Tips, when to use them, and guidance for the AI</caption>
+    <thead><tr><th scope="col">Tip</th><th scope="col">Use this tip when</th><th scope="col">Guidance for the AI</th><th scope="col">Source</th></tr></thead>
+    <tbody>
+    <tr id="row-p01">
+      <th scope="row" data-label="Tip"><span class="pid">P01</span> <a href="#understanding-pain">understanding what pain is (and isn&#x27;t) telling you</a></th>
+      <td data-label="Use this tip when">X describes fear or avoidance of an activity because of a belief it will cause damage, or confusion about why pain flares without an obvious cause.</td>
+      <td data-label="Guidance for the AI"><strong>May:</strong> explain, in the person&#x27;s own terms, that a flare doesn&#x27;t necessarily mean new damage. <br><strong>Never:</strong> make a diagnostic claim about what is or isn&#x27;t causing this specific person&#x27;s pain, or promise pain will reduce.</td>
+      <td data-label="Source"><a href="https://www.arthritis.org.nz/pain-help/understanding-pain">Understanding pain, Arthritis NZ</a></td>
+    </tr>
+    <tr id="row-p02">
+      <th scope="row" data-label="Tip"><span class="pid">P02</span> <a href="#keep-moving">keeping moving, gently</a></th>
+      <td data-label="Use this tip when">X describes an activity the person has stopped or reduced entirely, especially where fear or a bad past experience is the main barrier.</td>
+      <td data-label="Guidance for the AI"><strong>May:</strong> suggest doing more of a movement the person already does, or doing it more often in smaller amounts, referencing only their own named activity. <br><strong>Never:</strong> name a specific exercise, stretch, rep count or body position, or suggest a gym, class or new sport they did not mention.</td>
+      <td data-label="Source"><a href="https://www.arthritis.org.nz/living-with-arthritis/movement-and-exercise">Movement and exercise, Arthritis NZ</a></td>
+    </tr>
+    <tr id="row-p03">
+      <th scope="row" data-label="Tip"><span class="pid">P03</span> <a href="#pacing">pacing yourself</a></th>
+      <td data-label="Use this tip when">X describes pushing on until pain forces a stop, then avoiding the activity afterwards — the boom-and-bust pattern.</td>
+      <td data-label="Guidance for the AI"><strong>May:</strong> split, shorten or spread out an activity the person named, and suggest a break at a point they choose. <br><strong>Never:</strong> specify a medically precise duration as though prescribed.</td>
+      <td data-label="Source"><a href="https://www.arthritis.org.nz/pain-help/pacing-for-arthritis-pain-and-fatigue">Pacing for arthritis pain and fatigue, Arthritis NZ</a></td>
+    </tr>
+    <tr id="row-p04">
+      <th scope="row" data-label="Tip"><span class="pid">P04</span> <a href="#adapting">adapting the activity rather than giving it up</a></th>
+      <td data-label="Use this tip when">X describes an activity the person has stopped altogether, particularly where the value (Y) is about connection to a person, place or routine rather than the activity itself.</td>
+      <td data-label="Guidance for the AI"><strong>May:</strong> change when, where, how long or how much of the activity, or suggest doing part of it rather than all of it. <br><strong>Never:</strong> propose a different activity as a substitute, or modify body position or technique.</td>
+      <td data-label="Source"><a href="https://www.arthritis.org.nz/pain-help/treating-pain">Treating pain, Arthritis NZ</a></td>
+    </tr>
+    <tr id="row-p05">
+      <th scope="row" data-label="Tip"><span class="pid">P05</span> <a href="#protect-your-joints">protecting your joints</a></th>
+      <td data-label="Use this tip when">X describes strain from a specific repeated task — lifting, gripping, standing, or holding one position — rather than an activity that could simply be paced or split.</td>
+      <td data-label="Guidance for the AI"><span class="badge">High risk</span> <strong>May:</strong> suggest changing position more often, splitting a task so no position is held long, or asking someone else to do the heaviest part. <br><strong>Never:</strong> describe a specific posture, grip, lifting technique or body position — that is clinical instruction and needs an OT or physio.</td>
+      <td data-label="Source"><a href="https://www.arthritis.org.nz/news/tips-to-improve-and-protect-joint-health">Tips to improve and protect joint health, Arthritis NZ</a></td>
+    </tr>
+    <tr id="row-p06">
+      <th scope="row" data-label="Tip"><span class="pid">P06</span> <a href="#tools-and-supports">using tools and supports to make things easier</a></th>
+      <td data-label="Use this tip when">X describes a task made difficult specifically by grip, reach, balance or fine motor control, where the person hasn&#x27;t mentioned trying any aid.</td>
+      <td data-label="Guidance for the AI"><span class="badge">High risk</span> <strong>May:</strong> say that aids exist for this kind of task and point to the resource or an OT. <br><strong>Never:</strong> recommend a specific product, brand or model, or state that a particular aid will help this person.</td>
+      <td data-label="Source"><a href="https://www.arthritis.org.nz/living-with-arthritis/products-and-equipment">Products and equipment, Arthritis NZ</a></td>
+    </tr>
+    <tr id="row-p07">
+      <th scope="row" data-label="Tip"><span class="pid">P07</span> <a href="#plan-your-energy">planning and prioritising your energy</a></th>
+      <td data-label="Use this tip when">X describes being overloaded by several responsibilities at once (a full day, a full week, a household of jobs) rather than a single activity.</td>
+      <td data-label="Guidance for the AI"><strong>May:</strong> reorder, redistribute across days, or suggest delegating tasks the person named, or suggest dropping something they themselves described as less important. <br><strong>Never:</strong> tell the person which of their responsibilities matter, or assume anyone is available to help.</td>
+      <td data-label="Source"><a href="https://www.arthritis.org.nz/pain-help/treating-pain">Treating pain, Arthritis NZ</a></td>
+    </tr>
+    <tr id="row-p08">
+      <th scope="row" data-label="Tip"><span class="pid">P08</span> <a href="#flare-ups">having a plan for flare-ups</a></th>
+      <td data-label="Use this tip when">X describes a current flare or being regularly caught out by unpredictable bad spells, rather than a specific activity to adapt.</td>
+      <td data-label="Guidance for the AI"><span class="badge">High risk</span> <strong>May:</strong> suggest deciding in advance what to drop and who to tell, referencing responsibilities the person named. <br><strong>Never:</strong> suggest medication, heat, cold or any physical intervention, or estimate how long a flare will last. If the person is in a flare right now, prefer a Redirect message over a tip.</td>
+      <td data-label="Source"><a href="https://www.arthritis.org.nz/pain-help/managing-flare-ups">Managing a flare-up, Arthritis NZ</a></td>
+    </tr>
+    <tr id="row-p09">
+      <th scope="row" data-label="Tip"><span class="pid">P09</span> <a href="#relaxation">using relaxation and attention techniques</a></th>
+      <td data-label="Use this tip when">X describes stress, tension, or pain that feels worse when the mind is idle or unoccupied.</td>
+      <td data-label="Guidance for the AI"><strong>May:</strong> suggest making time for something absorbing the person already mentioned enjoying, or point to the mindfulness resource. <br><strong>Never:</strong> script a specific breathing exercise or meditation, or imply it will reduce pain intensity.</td>
+      <td data-label="Source"><a href="https://www.arthritis.org.nz/living-with-arthritis/complementary-therapies/mindfulness-mental-health">Mindfulness and mental health, Arthritis NZ</a></td>
+    </tr>
+    <tr id="row-p10">
+      <th scope="row" data-label="Tip"><span class="pid">P10</span> <a href="#what-influences-pain">looking after the things that influence pain</a></th>
+      <td data-label="Use this tip when">X describes poor sleep, stress, low mood or diet as part of the picture, even if not the main complaint.</td>
+      <td data-label="Guidance for the AI"><strong>May:</strong> point out the connection between what the person described and their pain, and suggest it&#x27;s worth attention too. <br><strong>Never:</strong> give sleep, diet, weight or nutrition instructions, or suggest a specific target, plan or amount.</td>
+      <td data-label="Source"><a href="https://www.arthritis.org.nz/pain-help/treating-pain/mental-health-and-pain">Mental health and pain, Arthritis NZ</a></td>
+    </tr>
+    <tr id="row-p11">
+      <th scope="row" data-label="Tip"><span class="pid">P11</span> <a href="#get-support">getting support rather than managing everything alone</a></th>
+      <td data-label="Use this tip when">X describes isolation, feeling unheard by a health professional, or not knowing who to ask — rather than a physical activity to adapt.</td>
+      <td data-label="Guidance for the AI"><strong>May:</strong> name Arthritis Assist, a GP, pharmacist, physiotherapist or OT, and suggest preparing for that conversation (tracking, writing questions down). <br><strong>Never:</strong> name a counselling service or crisis line — those belong to Safety or Redirect messages, not a generated Tip.</td>
+      <td data-label="Source"><a href="https://www.arthritis.org.nz/is-it-arthritis/treating-joint-pain/lifestyle">Lifestyle options for treating joint pain, Arthritis NZ</a></td>
+    </tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sec">Rules for every tip</h3>
+  <ul class="guard"><li>The LLM may only rearrange or rescale what the person has already told it: how much, how long, how often, in what order, with what breaks, with whose help.</li><li>The LLM must never introduce a new activity, exercise, stretch, body position, posture or product that the person did not mention.</li><li>Where the natural application would need a new activity, position or product, the LLM must instead suggest asking a physiotherapist, occupational therapist, pharmacist or GP.</li><li>No medical claims, no diagnosis, no promises about outcomes.</li><li>No financial, legal or employment advice, and no naming of counselling or crisis services — those are handled by Redirect and Safety messages, never generated.</li><li>Framing and Situation are plain New Zealand English, second person, warm but not gushing, no exclamation marks.</li><li>Individual principle rows in Resources may add stricter guardrails on top of these. A principle-specific guardrail can only narrow what is allowed, never widen it.</li></ul>
+
+  <h3 class="sec">Safety and redirect messages</h3>
+  
+<div class="tablewrap"><table class="grid">
+  <caption>Safety messages – give one of these instead of a tip</caption>
+  <thead><tr><th scope="col">ID</th><th scope="col">Use when</th><th scope="col">Message to give</th><th scope="col">Links</th></tr></thead>
+  <tbody>
+    <tr id="msg-s01">
+      <th scope="row" data-label="ID">S01</th>
+      <td data-label="Use when">Pain stopping normal activities or affecting sleep; worsening or recurring pain; no improvement after two weeks; morning stiffness over 30 minutes.</td>
+      <td data-label="Message to give">Some of what you have described is worth talking through with a doctor. Arthritis NZ&#x27;s helpline is 0800 663 463.</td>
+      <td data-label="Links"><a href="tel:0800663463">Arthritis Assist</a></td>
+    </tr>
+    <tr id="msg-s02">
+      <th scope="row" data-label="ID">S02</th>
+      <td data-label="Use when">Severe pain over a week; sudden loss of joint movement; cannot put weight on a joint; fever, night sweats, weight loss, feeling generally unwell.</td>
+      <td data-label="Message to give">What you have described is worth getting checked by a health professional rather than managed with self-help tips. Please contact your doctor.</td>
+      <td data-label="Links"></td>
+    </tr>
+    <tr id="msg-s03">
+      <th scope="row" data-label="ID">S03</th>
+      <td data-label="Use when">Mentions stopping, changing, skipping or running out of prescribed medication.</td>
+      <td data-label="Message to give">Changes to medication are worth talking through with your doctor or pharmacist first. Arthritis NZ&#x27;s helpline is 0800 663 463.</td>
+      <td data-label="Links"><a href="tel:0800663463">Arthritis Assist</a></td>
+    </tr>
+    <tr id="msg-s04">
+      <th scope="row" data-label="ID">S04</th>
+      <td data-label="Use when">Any expression of distress, hopelessness, not wanting to go on, or self-harm. Highest priority — overrides all other rows.</td>
+      <td data-label="Message to give">Your safety and wellbeing is the number one priority. Please call 111 now if you feel like you&#x27;re in danger or at risk of harm. You can also text or call 1737 anytime to connect with a trained counsellor or peer support worker.</td>
+      <td data-label="Links"><a href="tel:111">Emergency 111</a> · <a href="tel:1737">Mental health crisis 1737</a></td>
+    </tr>
+    <tr id="msg-s05">
+      <th scope="row" data-label="ID">S05</th>
+      <td data-label="Use when">Free text the matching system cannot confidently place against any principle or life area.</td>
+      <td data-label="Message to give">I haven&#x27;t understood enough to suggest something useful here. Arthritis Assist is free on 0800 663 463 and can talk it through with you.</td>
+      <td data-label="Links"><a href="tel:0800663463">Arthritis Assist</a></td>
+    </tr>
+    <tr id="msg-s06">
+      <th scope="row" data-label="ID">S06</th>
+      <td data-label="Use when">Describes being in an active flare right now.</td>
+      <td data-label="Message to give">It sounds like things are difficult right now. Arthritis NZ has guidance on getting through a flare, and Arthritis Assist is free on 0800 663 463.</td>
+      <td data-label="Links"><a href="https://www.arthritis.org.nz/pain-help/managing-flare-ups">Managing a flare-up</a></td>
+    </tr></tbody>
+</table></div>
+  
+<div class="tablewrap"><table class="grid">
+  <caption>Redirect messages – give one of these before a tip when the person needs more than self-management</caption>
+  <thead><tr><th scope="col">ID</th><th scope="col">Use when</th><th scope="col">Message to give</th><th scope="col">Links</th></tr></thead>
+  <tbody>
+    <tr id="msg-r01">
+      <th scope="row" data-label="ID">R01</th>
+      <td data-label="Use when">Life area = Work &amp; finances.</td>
+      <td data-label="Message to give">A tip won&#x27;t fix the money or job side of this, but there is help. Arthritis NZ also has information on financial support and on your rights at work</td>
+      <td data-label="Links"><a href="https://www.arthritis.org.nz/living-with-arthritis/financial-support">Financial support</a> · <a href="https://www.arthritis.org.nz/living-with-arthritis/arthritis-and-work/for-employees">Arthritis &amp; work</a> · <a href="tel:0800663463">Arthritis Assist</a></td>
+    </tr>
+    <tr id="msg-r02">
+      <th scope="row" data-label="ID">R02</th>
+      <td data-label="Use when">Life area = Mental wellbeing.</td>
+      <td data-label="Message to give">Pain and mental wellbeing feed each other, and Arthritis NZ has specific guidance on this. You don&#x27;t have to work through it on your own.</td>
+      <td data-label="Links"><a href="https://www.arthritis.org.nz/pain-help/treating-pain/mental-health-and-pain">Arthritis &amp; mental health</a> · <a href="https://www.arthritis.org.nz/living-with-arthritis/mental-health/coping-strategies">Coping strategies</a> · <a href="tel:1737">1737, free call or text</a></td>
+    </tr>
+    <tr id="msg-r03">
+      <th scope="row" data-label="ID">R03</th>
+      <td data-label="Use when">Life area = Spiritual.</td>
+      <td data-label="Message to give">Arthritis NZ&#x27;s wellbeing kete is built on Te Whare Tapa Whā, which treats taha wairua as one of the four walls of hauora.</td>
+      <td data-label="Links"><a href="https://www.arthritis.org.nz/assets-prod/downloads/Lifestyle-Fact-Sheets/Wellbeing-kete-or-toolbox-fact-sheet.pdf">Wellbeing kete</a> · <a href="tel:0800663463">Arthritis Assist</a></td>
+    </tr>
+    <tr id="msg-r04">
+      <th scope="row" data-label="ID">R04</th>
+      <td data-label="Use when">Free text asks about medication — what to take, whether something is safe, side effects, or interactions.</td>
+      <td data-label="Message to give">This tool can&#x27;t provide medication or medical advice. Please ask your pharmacist or GP directly, since it depends on what else you&#x27;re taking and your own health history. Arthritis NZ has background reading on medication options.</td>
+      <td data-label="Links"><a href="https://www.arthritis.org.nz/pain-help/treating-pain/pharmaceutical-medication">Pain medication</a> · <a href="https://www.arthritis.org.nz/is-it-arthritis/treating-joint-pain/medication">Medication for treating joint pain</a></td>
+    </tr>
+    <tr id="msg-r05">
+      <th scope="row" data-label="ID">R05</th>
+      <td data-label="Use when">Free text asks about a procedure, injection or device (for example PRP, cortisone, TENS) rather than self-management.</td>
+      <td data-label="Message to give">This tool can&#x27;t provide medication or medical advice. This is a conversation for your GP or specialist, since it depends on your individual situation. Arthritis NZ has evidence summaries you can read beforehand.</td>
+      <td data-label="Links"><a href="https://www.arthritis.org.nz/news/tens-machines-and-arthritis-what-you-need-to-know">TENS machines and arthritis</a> · <a href="https://www.arthritis.org.nz/news/prp-injections-for-osteoarthritis-what-does-the-evidence-say">PRP injections for osteoarthritis</a></td>
+    </tr>
+    <tr id="msg-r06">
+      <th scope="row" data-label="ID">R06</th>
+      <td data-label="Use when">Free text asks about supplements, herbs or complementary/alternative products.</td>
+      <td data-label="Message to give">This tool can&#x27;t provide medication or medical advice. Some supplements can interact with medication, so it&#x27;s worth checking with a pharmacist before starting anything. Arthritis NZ has a plain-language look at what evidence exists.</td>
+      <td data-label="Links"><a href="https://www.arthritis.org.nz/news/herbs-and-supplements-for-arthritis-whats-safe-and-what-might-help">Herbs and supplements for arthritis</a></td>
+    </tr></tbody>
+</table></div>
+</section>
+
+<section class="disclaimer" id="privacy" aria-labelledby="disc">
+  <h2 id="disc">Disclaimer and privacy</h2>
+  <p>We (Arthritis New Zealand) provide clinically reviewed and trusted advice. We do not control how AI tools behave. As such, while we have made every effort to improve the quality of advice provided by AI tools, we can’t guarantee that the AI tools will get it right every time. They make mistakes. We encourage you to always check the source information that we provide.</p>
+  <p>We understand that AI can help people get health advice, but we recommend that you do not enter personally identifiable details (like people’s names) into free AI tools like Google AI overviews or ChatGPT. It is unclear how these tools may use your personal details in the future.</p>
+</section>
+<footer>Pain Hub · Arthritis New Zealand · Arthritis Assist 0800 663 463 · DRAFT for testing</footer>
+</main>
+
+<script>
+(function(){
+  // Everything above works without JavaScript. This only adds the copy button and opens a linked tip.
+  var b=document.getElementById('copybtn'), p=document.getElementById('prompt');
+  if(b&&p){ b.addEventListener('click',function(){
+    var t=p.innerText, done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy prompt'},2000)};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,fallback)}else{fallback()}
+    function fallback(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);
+      try{document.execCommand('copy');done()}catch(e){b.textContent='Press Ctrl+C to copy'}}
+  }); }
+  function openHash(){var h=location.hash&&document.getElementById(location.hash.slice(1));
+    if(h&&h.tagName==='DETAILS'){h.open=true}}
+  addEventListener('hashchange',openHash);openHash();
+})();
+</script>
+</body>
+</html>
